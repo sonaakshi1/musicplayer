@@ -76,7 +76,7 @@ async def welcome(_, message: Message):
                     ASS_ACC,
                 ) = await get_assistant_details(ran_ass)
                 out = start_pannel()
-                await message.reply_text(
+                await message.reply_photo(
                     f"Welcome To {MUSIC_BOT_NAME}\n\nPromote me as administrator in your group otherwise I will not function properly.\n\nAssistant Username:- @{ASS_USERNAME}\nAssistant ID:- {ASS_ID}",
                     reply_markup=InlineKeyboardMarkup(out[1]),
                 )
